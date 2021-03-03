@@ -1,0 +1,16 @@
+# strumienie
+warsztat-strumienie
+
+1. Przydatne linki: +
+* Darmowy tutorial zawierający nowości od java 8 do 13 +
+** https://www.udemy.com/course/java-latest-programming-from-zero-java13-java12-java11-java10-java9-j8/learn/lecture/17819984#overview
+* Dokumentacja z oracle: +
+** java.util.stream +
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/package-summary.html
+
+2. Zadanie:
+* wykonać analizę tekstu po przez uzupełnienie metod zanajdujących się w klasie TextAnalyzer:
+** longestWord() znajduje najdłuższy wyraz
+** countWords() zlicza ilość wyrazów
+** averageLetterNumberInWords() zlicza średnią liczbę znaków w wyrazach
+** countCharacters() zlicza ilość wystąpień każdej litery

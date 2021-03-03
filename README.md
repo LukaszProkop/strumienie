@@ -1,2 +1,0 @@
-# strumienie
-warsztat-strumienie

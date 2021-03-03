@@ -20,22 +20,22 @@ class TextAnalyzer {
     }
 
     public static String longestWord(String inputPath) {
-        /* TODO: Dodaj swoja implementację korzystając ze Strumieni i wykonaj przygotowane testy testy.
+        /* TODO: Dodaj swoja implementację korzystając ze Strumieni i wykonaj przygotowane testy.
             Nie zmieniaj synatury metody.*/
     }
 
     public static double averageLetterNumberInWords(String inputPath) {
-        /* TODO: Dodaj swoja implementację korzystając ze Strumieni i wykonaj przygotowane testy testy.
+        /* TODO: Dodaj swoja implementację korzystając ze Strumieni i wykonaj przygotowane testy.
             Nie zmieniaj synatury metody oraz testów.*/
     }
 
     public static long countWords(String inputPath) {
-        /* TODO: Dodaj swoja implementację korzystając ze Strumieni i wykonaj przygotowane testy testy.
+        /* TODO: Dodaj swoja implementację korzystając ze Strumieni i wykonaj przygotowane testy.
             Nie zmieniaj synatury oraz testów.*/
     }
 
     public static Map<Character, Integer> countCharacters(String inputPath) {
-        /* TODO: Dodaj swoja implementację korzystając ze Strumieni i wykonaj przygotowane testy testy.
+        /* TODO: Dodaj swoja implementację korzystając ze Strumieni i wykonaj przygotowane testy.
             Nie zmieniaj synatury oraz testów.*/
     }
 }

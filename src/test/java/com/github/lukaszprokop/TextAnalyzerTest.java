@@ -1,6 +1,7 @@
 package com.github.lukaszprokop;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -48,30 +49,45 @@ public class TextAnalyzerTest {
         assertEquals(actual, expected, "niepoprawna ilość wyrazow w pliku");
     }
 
-    @Test
-    public void countCharactersTest() {
+    @Test(dataProvider = "charactersCounter")
+    public void countCharactersTest(char letter, int counter) {
         //given
-        Map<Character, Integer> expected = new HashMap<>(Map.of('ł', 3, 'ę', 1, 'ś', 1, 'a', 7,
-                'b', 2, 'c', 1, 'd', 2, 'e', 7, 'f', 1, 'g', 3));
-        expected.put('h', 1);
-        expected.put('i', 8);
-        expected.put('k', 2);
-        expected.put('l', 2);
-        expected.put('n', 4);
-        expected.put('o', 2);
-        expected.put('p', 4);
-        expected.put('r', 4);
-        expected.put('ó', 1);
-        expected.put('s', 5);
-        expected.put('t', 4);
-        expected.put('u', 2);
-        expected.put('w', 2);
-        expected.put('y', 2);
-        expected.put('z', 5);
+        int expected = counter;
         //when
-        Map<Character, Integer> actual = countCharacters(path);
+        int actual = countCharacters(path).get(letter);
         //then
         assertEquals(expected, actual, "błędne liczenie znakow");
+    }
+
+    @DataProvider
+    public Object[][] charactersCounter() {
+        return new Object[][]{
+                {'ł', 3},
+                {'ę', 1},
+                {'ś', 1},
+                {'a', 7},
+                {'b', 2},
+                {'c', 1},
+                {'d', 2},
+                {'e', 7},
+                {'f', 1},
+                {'g', 3},
+                {'h', 1},
+                {'i', 8},
+                {'k', 2},
+                {'l', 2},
+                {'n', 4},
+                {'o', 2},
+                {'p', 4},
+                {'r', 4},
+                {'ó', 1},
+                {'s', 5},
+                {'t', 4},
+                {'u', 2},
+                {'w', 2},
+                {'y', 2},
+                {'z', 5},
+        };
     }
 
 }

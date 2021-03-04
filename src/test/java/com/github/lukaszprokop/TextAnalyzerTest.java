@@ -4,12 +4,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static com.github.lukaszprokop.TextAnalyzer.*;
-
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
 
 public class TextAnalyzerTest {
     private String path;

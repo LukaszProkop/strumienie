@@ -28,7 +28,7 @@ public class TextAnalyzerTest {
     @Test
     public void averageLetterNumberInWordsTest() {
         //given
-        double expected = 5.2d;
+        double expected = 5.066666666666666d;
         //when
         double actual = averageLetterNumberInWords(path);
         //then
@@ -50,7 +50,7 @@ public class TextAnalyzerTest {
         //given
         int expected = counter;
         //when
-        int actual = countCharacters(path).get(letter);
+        int actual = countLetters(path).get(letter);
         //then
         assertEquals(expected, actual, "błędne liczenie znakow");
     }

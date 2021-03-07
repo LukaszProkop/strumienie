@@ -16,4 +16,4 @@ https://docs.oracle.com/javase/tutorial/collections/streams/index.html#pipelines
 ** `longestWord()` znajduje najdłuższy wyraz
 ** `countWords()` zlicza ilość wyrazów
 ** `averageLetterNumberInWords()` zlicza średnią liczbę znaków w wyrazach
-** `countCharacters()` zlicza ilość wystąpień każdej litery
+** `countLetters()` zlicza ilość wystąpień każdej litery

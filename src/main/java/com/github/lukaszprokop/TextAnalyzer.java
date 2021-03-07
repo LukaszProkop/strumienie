@@ -18,7 +18,7 @@ class TextAnalyzer {
         System.out.printf("\nIlosc wyrazow w pliku: %d%n", countWords(path));
 
         System.out.println("\nWystąpienia liter:");
-        countCharacters(path).forEach((character, integer) -> System.out.printf("%c: %d\n", character, integer));
+        countLetters(path).forEach((character, integer) -> System.out.printf("%c: %d\n", character, integer));
 
     }
 
@@ -34,7 +34,7 @@ class TextAnalyzer {
         /* TODO: Twoja implementacja*/
     }
 
-    static Map<Character, Integer> countCharacters(String inputPath) {
+    static Map<Character, Integer> countLetters(String inputPath) {
         /* TODO: Twoja implementacja*/
     }
 }
